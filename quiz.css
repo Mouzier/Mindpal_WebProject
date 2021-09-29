@@ -74,7 +74,7 @@ body{
 }
 
 .qa_ans input:checked + span{
-    background-color: aquamarine;
+    background-color: blueviolet;
     color: #fff;
 }
 .qa_footer{
