@@ -15,18 +15,29 @@ Next.addEventListener('click',function(){
 qaAns.forEach(function(qaAnsSingle){
     qaAnsSingle.addEventListener('click',function(){
         
-        var valid=this.getAttribute("valid");
+        var valid0=this.getAttribute("valid0");
         var valid1=this.getAttribute("valid1");
-        if(valid=="valid"){
-            scoreCount +=20;
+        var valid2=this.getAttribute("valid2");
+        var valid3=this.getAttribute("valid3");
+        
+        if(valid0=="valid0"){
+            scoreCount +=0;
             score.innerHTML=scoreCount;
             totalscore.innerHTML=scoreCount;
         }else if(valid1=="valid1"){
-            scoreCount +=10;
+            scoreCount +=1;
+            score.innerHTML=scoreCount;
+            totalscore.innerHTML=scoreCount;
+        }else if(valid2=="valid2"){
+            scoreCount +=2;
+            score.innerHTML=scoreCount;
+            totalscore.innerHTML=scoreCount;
+        }else if(valid3=="valid3"){
+            scoreCount +=3;
             score.innerHTML=scoreCount;
             totalscore.innerHTML=scoreCount;
         }else{
-            scoreCount -=20;
+            scoreCount +=4;
             score.innerHTML=scoreCount;
             totalscore.innerHTML=scoreCount;
         }
@@ -40,8 +51,7 @@ function step(){
         qaSet[i].className= 'qa_set';
     }
     qaSet[count].className= 'qa_set active';
-    if(count==6){
+    if(count==30){
         Next.style.display = 'none';
     }
 }
-
