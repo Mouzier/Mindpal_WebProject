@@ -52,25 +52,12 @@ body{
     position: relative;
     margin-bottom: 10px;
 }
-.qa_ans input{
-    opacity: 0;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    cursor: pointer;
-}
-.qa_ans span{
+
+img{
+    width:25%;
+    height:25%;
+    margin: 1px auto;
     display: block;
-    padding: 8px 15px;
-    background-color: #bad0c9;
-    border-radius: 15px;
-    transition: all 0.3s ease-out;
-}
-.qa_ans:hover span{
-    background-color: #9ab5ac;
 }
 
 .qa_ans input:checked + span{
