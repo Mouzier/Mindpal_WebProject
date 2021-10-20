@@ -5,10 +5,19 @@
     box-sizing: border-box;
 }
 
+#logo{
+    position: absolute;
+    height: 45%;
+    width: 210px;
+    top: 0;
+    left:0;
+}
+
 body{
     font-family: arial;
     font-size:16px;
     margin:0;
+    padding: 0;
     background-image: linear-gradient(#4568dc,#b06ab3);
     color:#000;
     display: flex;
@@ -21,6 +30,7 @@ body{
     width: 500px;
     padding: 20px;
     min-height: 100px;
+    align-items: center;
     background-color: aliceblue;
     box-shadow: 0 05px 3px rgba(0,0,0,0.3);
     border-radius: 15px;
@@ -30,6 +40,7 @@ body{
     background-color: chocolate;
     color: #fff;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 15px 20px;
     margin:-20px -20px 20px;
