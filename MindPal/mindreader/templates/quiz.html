@@ -1,0 +1,747 @@
+{% load static%}
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0,user-scalable=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'mindreader/css/quiz.css' %}">
+    <title>QUIZ PAGE</title>
+</head>
+<body>
+    <div class="qa_box">
+        <div class="qa_header">
+            <span>Profile of Mood States</span>
+        </div>
+        <div class="qa_body">
+        <div class="qa_set active">
+            <img src="{% static 'mindreader/img/active.jpg'%}">
+            <h4><center>Active</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a1" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a1" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a1" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a1" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a1" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+            <div class="qa_set">
+                <img src="{% static 'mindreader/img/muddle.jpg' %}">
+            <h4><center>Muddled</center></h4>
+            <div class="{% static 'mindreader/img/qa_ans'%}">
+                <input type="radio" name="a2" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a2" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a2" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a2" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a2" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        </div>
+        <div class="qa_set">
+            <img src="{%static 'mindreader/img/exhausted.jpg'%}">
+            <h4><center>Exhausted</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a3" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a3" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a3" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a3" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a3" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="{%static 'mindreader/img/tension.jpg'%}">
+            <h4><center>Tense</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a4" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a4" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a4" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a4" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a4" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="{% static 'mindreader/img/resentful.jpg'%}">
+            <h4><center>Resentful</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a5" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a5" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a5" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a5" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a5" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="{% static 'mindreader/img/forgetful.jpg'%}">
+            <h4><center>Forgetful</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a6" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a6" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a6" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a6" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a6" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="{% static 'mindreader/img/guilty.jpg'%}">
+            <h4><center>Guilty</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a7" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a7" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a7" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a7" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a7" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="{% static 'mindreader/img/angry.jpg'%}">
+            <h4><center>Anger</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a8" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a8" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a8" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a8" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a8" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="{% static 'mindreader/img/sad.jpg'%}">
+            <h4><center>Sad</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a9" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a9" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a9" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a9" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a9" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="{% static 'mindreader/img/weary.jpg'%}">
+            <h4><center>Weary</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a10" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a10" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a10" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a10" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a10" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="{% static 'mindreader/img/lively.jpg'%}">
+            <h4><center>Lively</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a11" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a11" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a11" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a11" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a11" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="{% static 'mindreader/img/restless.jpg'%}">
+            <h4><center>Restless</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a12" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a12" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a12" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a12" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a12" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="{% static 'mindreader/img/energetic.jpg'%}">
+            <h4><center>Energetic</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a13" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a13" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a13" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a13" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a13" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="">
+            <h4><center>Unworthy</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a14" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a14" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a14" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a14" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a14" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="{% static 'mindreader/img/readytofight.jpg'%}">
+            <h4><center>Ready to fight</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a15" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a15" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a15" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a15" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a15" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="{% static 'mindreader/img/anxious.jpg'%}">
+            <h4><center>Anxious</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a16" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a16" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a16" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a16" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+                <div class="qa_ans">
+                <input type="radio" name="a16" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="{% static 'mindreader/img/desperate.jpg'%}">
+            <h4><center>Desperate</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a17" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a17" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a17" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a17" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a17" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="{% static 'mindreader/img/fatigue.jpg'%}">
+            <h4><center>Fatigued</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a18" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a18" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a18" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a18" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a18" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="">
+            <h4><center>Deceived</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a19" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a19" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a19" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a19" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a19" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="{% static 'mindreader/img/alert.jpg'%}">
+            <h4><center>Alert</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a20" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a20" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a20" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a20" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a20" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="{% static 'mindreader/img/lossoffocus.jpg'%}">
+            <h4><center>Loss of focus</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a21" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a21" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a21" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a21" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a21" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="{% static 'mindreader/img/annoyed.jpg'%}">
+            <h4><center>Annoyed</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a22" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a22" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a22" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a22" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a22" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="{% static 'mindreader/img/slow.jpg'%}">
+            <h4><center>Slow</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a23" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a23" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a23" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a23" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a23" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="{% static 'mindreader/img/uneasy.jpg'%}">
+            <h4><center>Uneasy</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a24" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a24" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a24" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a24" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a24" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="{% static 'mindreader/img/carefree.jpg'%}">
+            <h4><center>Carefree</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a25" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a25" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a25" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a25" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a25" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="{% static 'mindreader/img/uncertain.jpg'%}">
+            <h4><center>Uncertain</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a26" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a26" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a26" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a26" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a26" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="{% static 'mindreader/img/confused.jpg'%}">
+            <h4><center>Confused</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a27" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a27" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a27" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a27" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a27" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="{% static 'mindreader/img/wornout.jpg'%}">
+            <h4><center>Worn out</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a28" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a28" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a28" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a28" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a28" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="{% static 'mindreader/img/hopeless.jpg'%}">
+            <h4><center>Hopeless</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a29" valid0="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a29" valid1="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a29" valid2="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a29" valid3="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a29" valid4="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <img src="{% static 'mindreader/img/nervous.jpg'%}">
+            <h4><center>Nervous</center></h4>
+            <div class="qa_ans">
+                <input type="radio" name="a30" valid="valid0">
+                <span>Not at all(0)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a30" valid="valid1">
+                <span>Little Bit(1)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a30" valid="valid2">
+                <span>Moderately(2)</span>
+            </div>
+            <div class="qa_ans">
+                <input type="radio" name="a30" valid="valid3">
+                <span>Quite a bit(3)</span>
+            </div>
+                <div class="qa_ans">
+                <input type="radio" name="a30" valid1="valid4">
+                <span>Extremely(4)</span>
+            </div>
+            </div>
+        <div class="qa_set">
+            <span>Score: <span id="score">0</span></span>
+            <h4>Your Total Score <span id="totalscore">0</span> out of 120</h4>
+        </div>
+        <div class="qa_footer">
+            <span class="btn1" id="Next">Next</span>
+        </div>
+    </div>
+    <script type="text/javascript" src="{% static 'mindreader/js/quiz.js'%}"></script>
+</body>
+</html>
