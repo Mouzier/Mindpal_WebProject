@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+#logo{
+    position: absolute;
+    height: 45%;
+    width: 210px;
+    top: 0;
+    left:0;
+}
+
 body{
     font-family: arial;
     font-size:16px;
