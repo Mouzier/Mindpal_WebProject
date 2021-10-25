@@ -1,0 +1,57 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0,user-scalable=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'mindreader/css/feedback.css' %}">
+    <title>Feedback</title>
+</head>
+    
+<body>
+         <img src="{% static 'mindreader/img/logo.png'%}">
+    <div class="sub">
+    <table>
+        <form action="" method="">
+        <h1>Feedback form</h1>
+            <tr>
+            <td colspan="2">
+                <label>
+                    How do you rate your overall Experience</label>
+                <br/>
+                <input type="radio" name="choose" value="excellent">Excellent
+                <input type="radio" name="choose" value="good">Good
+                <input type="radio" name="choose" value="average">Average
+                <input type="radio" name="choose" value="bad">Bad
+                </td>
+            </tr>
+            <tr>
+                <td><label>Full Name</label>
+                <br/>
+                    <input type="text" name="Fullname" class="txt" placeholder="Fullname" required>
+                </td>
+                <td><label>Email</label>
+                <br/>
+                    <input type="text" name="Email" class="txt"  placeholder="Email" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Phone Number</label>
+                <br/>
+                    <input type="text" name="Phonenumber" class="txt"  placeholder="PhoneNumber" required>
+                </td>
+            </tr>
+            <tr>
+            <td colspan="2"><label>Message</label>
+                <br/>
+                    <textarea class="txtarea" required></textarea>
+                </td>
+            </tr>
+            <tr>
+            <td colspan="2"><button type="submit" class="btn1">Submit</button></td>
+            </tr>
+        </form>
+        </table>
+    </div>
+    </body>
+</html>
