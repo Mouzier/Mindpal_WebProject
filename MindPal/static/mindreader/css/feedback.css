@@ -1,0 +1,47 @@
+body{
+    background-image: linear-gradient(rgba(222,100,150,1), rgba(225,100,170,0.2));
+    background-size: cover;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+.sub{
+    width: 800px;
+    height: 700px;
+    margin: 30px auto;
+}
+
+h1{
+    font-size: 70px;
+    color: firebrick;
+    text-align: center;
+    border-bottom: 2px solid blue;
+}
+table{
+    font-size: 30px;
+}
+td{
+   padding: 10px 20px 0px 0px; 
+}
+
+.txt{
+    width: 400px;
+    height: 30px;
+    border-radius: 8px;
+}
+.txtarea{
+    width: 830px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.btn1{
+    width: 830px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 20px;
+}

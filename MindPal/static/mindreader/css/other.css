@@ -1,0 +1,9 @@
+body{
+    background-image: linear-gradient(rgba(222,100,150,1), rgba(225,100,170,0.2));
+    background-size: cover;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
