@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0,user-scalable=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="serene.css">
+    <title>Mindpal</title>
+</head> 
+    <body>
+        <!--- Serene --->
+    <section class="serene">
+    <h1>SERENE SPACE</h1>
+        <div class="row">
+            <div class="serene-col">
+                <h3>INNER PEACE</h3>
+                <img src="meditation.jpg">
+                <audio id="audioBar" controls>
+                    <source src="Inner peace.mp3">
+                </audio>
+                <p>“Inner peace (or peace of mind) refers to a state of being mentally and spiritually at peace, with enough knowledge and understanding to keep oneself strong in the face of discord or stress. Being ‘at peace’ is considered by many to be healthy and the opposite of being stressed or anxious”.When you remove all the unnecessary and useless stuff from your mind, you become more alive</p>
+            </div>
+            <div class="serene-col">
+                <h3>NATURE</h3>
+                <img src="nature.jpg">
+                <audio id="audioBar" controls>
+                    <source src="Nature.mp3">
+                </audio>
+                <p>“Nature holds the key to our aesthetic, intellectual, cognitive and even spiritual satisfaction”.Those who contemplate the beauty of the earth find reserves of strength that will endure as long as life lasts. … There is something infinitely healing in the repeated refrains of nature — the assurance that dawn comes after night, and spring after winter.</p>
+            </div>
+            <div class="serene-col">
+                <h3>OM</h3>
+                <img src="om.jpeg">
+                <audio id="audioBar" controls>
+                    <source src="OM.mp3">
+                </audio>
+                <p>"Aum or Om is one of the most powerful mantras of all time.Om can represent several meanings, many of which are based in symbolic pairs or triads: speech, mind, and breath; best praise and best prayer; the absence of desire, fear, and anger."The Om sound is great for tapping into the heart chakra [one of seven chakras].It is associated with enlightenment and wisdom</p>
+            </div>
+        </div>
+    </section>
+        
+    <section class="serene">
+    <h1>BREATHING TECHNIQUES</h1>
+        <div class="row">
+            <div class="serene-col">
+                <h3>Alternate nostril breathing</h3>
+                <p>Alternate nostril breathing, known as nadi shodhana pranayama in Sanskrit, is a breathing practice for relaxation.Alternate nostril breathing has been shown to enhance cardiovascular function and to lower heart rate.Nadi shodhana is best practiced on an empty stomach. Avoid the practice if you’re feeling sick or congested. Keep your breath smooth and even throughout the practice.</p>
+                <h4>To do this:</h4>
+                    <p><li>Choose a comfortable seated position.</li>
+                    <li>Lift up your right hand toward your nose, pressing your first and middle fingers down toward your palm and leaving your other fingers extended.</li>
+                    <li>After an exhale, use your right thumb to gently close your right nostril.</li>
+                    <li>Inhale through your left nostril and then close your left nostril with your right pinky and ring fingers.</li>
+                    <li>Release your thumb and exhale out through your right nostril.</li>
+                    <li>Inhale through your right nostril and then close this nostril.</li>
+                    <li>Release your fingers to open your left nostril and exhale through this side.This is one cycle.</li>
+                    <li>Continue this breathing pattern for up to 5 minutes.</li>
+                    <li>Finish your session with an exhale on the left side.</li></p>
+            </div>
+            <div class="serene-col">
+                <h3>DEEP BREATHING</h3><br>
+                <p>Deep breathing helps to relieve shortness of breath by preventing air from getting trapped in your lungs and helping you to breathe in more fresh air. It may help you to feel more relaxed and centered.</p><br><br><br>
+                <h4>To do this:</h4>
+                   <p><li>While standing or sitting, draw your elbows back slightly to allow your chest to expand.</li>
+                    <li>Take a deep inhalation through your nose.</li>
+                    <li>Retain your breath for a count of 5.</li>
+                    <li>Slowly release your breath by exhaling through your nose.</li>
+                </p>
+            </div>
+            <div class="serene-col">
+                <h3>Humming bee breath (bhramari)</h3>
+                <p>The unique sensation of this yoga breathing practice helps to create instant calm and is especially soothing around your forehead. Some people use humming bee breath to relieve frustration, anxiety, and anger. Of course, you’ll want to practice it in a place where you are free to make a humming sound.</p><br>
+                <h4>To do this:</h4>
+                    <p><li>Choose a comfortable seated position.</li>
+                    <li>Close your eyes and relax your face.</li>
+                    <li>Place your first fingers on the tragus cartilage that partially covers your ear canal.</li>
+                    <li>Inhale, and as you exhale gently press your fingers into the cartilage.</li>
+                    <li>Keeping your mouth closed, make a loud humming sound.</li>
+                    <li>Continue for as long as is comfortable.</li>
+                </p>
+            </div>
+        </div>
+    </section>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-circle-up" style="font-size:46px"></i></button>
+        <script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+    </body>
+</html>
