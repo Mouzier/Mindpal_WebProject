@@ -15,3 +15,6 @@ def feedback(request):
 
 def other(request):
 	return render(request, 'other.html',{})
+
+def serene(request):
+	return render(request, 'serene.html',{})

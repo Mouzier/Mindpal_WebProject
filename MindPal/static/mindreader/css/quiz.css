@@ -1,4 +1,4 @@
-*,*after,*:before{
+,*after,:before{
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     -ms-box-sizing:border-box;
@@ -7,7 +7,7 @@
 
 #logo{
     position: absolute;
-    height: 45%;
+    height: 200px;
     width: 210px;
     top: 0;
     left:0;
@@ -63,7 +63,7 @@ body{
 
 img{
     width:25%;
-    height:50%;
+    height:25%;
     margin: 1px auto;
     display: block;
 }
@@ -87,4 +87,14 @@ img{
 }
 .btn1:hover{
     background-color: #064484;
+}
+@media(max-width:700px){
+   .qa_box{
+    width: 300px;
+    padding: 20px;
+    min-height: 50px;
+    background-color: aliceblue;
+    box-shadow: 0 05px 3px rgba(0,0,0,0.3);
+    border-radius: 15px;
+}
 }

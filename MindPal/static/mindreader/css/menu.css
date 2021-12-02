@@ -131,7 +131,7 @@ div .fa{
         transition: 1s;
     }
     
-     nav .fa{
+     div .fa{
         display: block;
         color: #fff;
         margin: 10px;
